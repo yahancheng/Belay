@@ -26,7 +26,7 @@ Belay is a full-stack development project of a smaller version of the popular wo
 
 <img src="https://github.com/yahancheng/Belay/blob/main/unread.png" alt="Unread" width="250"/>
 
-- [x] Click to show messages in channel
+- [x] Click to show new messages in channel
 
 <img src="https://github.com/yahancheng/Belay/blob/main/new-message.png" alt="Unread" width="500"/>
 
