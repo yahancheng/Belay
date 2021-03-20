@@ -13,7 +13,7 @@
 
 Belay is a full-stack development project of a smaller version of the popular workplace messaging app, Slack. Users can create channels, posting messsages, and reply to thread in Belay. The below gif shows the overview of this project.
 
-<img src="https://github.com/yahancheng/iOS-Chicago-Clean-Food/blob/main/feature-demo.gif" alt="Feature Video" width="600"/>
+<img src="https://github.com/yahancheng/Belay/blob/main/overview.gif" alt="Feature Video" width="800"/>
 
 
 ## Features
@@ -24,11 +24,11 @@ Belay is a full-stack development project of a smaller version of the popular wo
 - [x] Post/reply messages including image url
 - [x] Shows number of unread messages in each channel
 
-<img src="https://github.com/yahancheng/Belay/blob/main/unread.png" alt="Unread" width="150"/>
+<img src="https://github.com/yahancheng/Belay/blob/main/unread.png" alt="Unread" width="250"/>
 
 - [x] Click to show messages in channel
 
-<img src="https://github.com/yahancheng/Belay/blob/main/new-message.png" alt="Unread" width="300"/>
+<img src="https://github.com/yahancheng/Belay/blob/main/new-message.png" alt="Unread" width="500"/>
 
 
 - [x] Use responsive styling to render reasonably in a phone browser
