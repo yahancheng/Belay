@@ -1,0 +1,427 @@
+body {
+    margin: 0;
+    background-color: whitesmoke;
+    font-family: "Hind Madurai";
+    /* overflow: hidden; */
+}
+
+header {
+    height: 70px;
+    display: flex;
+    align-items: center;
+    background: #6441A5;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #2a0845, #6441A5);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #2a0845, #6441A5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+header > img {
+    height: 80%;
+    margin-left: 10%;
+}
+
+header > p {
+    font-family: "Fascinate", monospace;
+    color: whitesmoke;
+    font-size: 50px;
+    margin-left: 60px;
+}
+
+#panel, html, body {
+    height: 90%
+}
+
+.panel {
+    margin-left: 10px;
+    margin-right: 10px;
+    display: grid;
+}
+
+.channelParent {
+    grid-template-columns: 25% 1fr;
+    display: grid;
+}
+
+.channel{
+    background-color: #2a0845;
+    text-align: center;
+}
+
+.channelChild{
+    grid-column-start: 1;
+    grid-column-end: 2;
+
+    overflow: scroll;
+    background-color: #2a0845;
+    text-align: center;
+}
+
+
+.messageGrid {
+    grid-template-columns: 1fr 1fr;
+    display: grid;
+}
+
+.message {
+    grid-column-start: 2;
+    height: 100%;
+    background-color: whitesmoke;
+}
+
+.messageChild {
+    grid-column-start: 1;
+    height: 100%;
+    position: relative;
+}
+
+.thread {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    background-color: rgb(193, 178, 207);
+    position: relative;
+}
+
+.loginBlock {
+    width: 400px;
+    height: 50%;
+    background-color: rgb(235, 218, 250);
+    border-radius: 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    margin-top: 5%;
+}
+
+.loginTitle {
+    font-family: "RocknRoll One";
+    padding-top: 10%;
+}
+
+.inputBlock {
+    margin: 8px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%
+}
+
+.editInput {
+    border: none;
+    background-color: rgb(216, 214, 214);
+    margin-left: 5px;
+    height: 24px;
+    font-family: "Hind Madurai";
+}
+
+
+@media (max-width: 880px){
+    .channelParent {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        display: grid;
+        z-index: -1;
+    }
+    .channel {
+        z-index:0;
+    }
+    .channelChild{
+        grid-column-start: 1;
+        grid-row-start: 1;
+        z-index: 0;
+    }
+
+    .messageGrid {
+        grid-template-columns: 1fr;
+        display: grid;
+    }
+    
+    .message {
+        grid-column-start: 1;
+        grid-row-start: 1;
+        height: 100%;
+        background-color: whitesmoke;
+        z-index: 1;
+    }
+    
+    .messageChild {
+        height: 100%;
+        grid-column-start: 1;
+        grid-row-start: 1;
+        z-index: 3;
+    }
+
+    .thread{
+        grid-column-start: 1;
+        grid-row-start: 1;
+        grid-column-start: 1;
+        z-index: 5;
+    }
+
+    
+}
+
+
+
+
+.loginButton {
+	box-shadow:inset 0px 1px 0px 0px #e184f3;
+	background:linear-gradient(to bottom, #c123de 5%, #a20dbd 100%);
+	background-color:#c123de;
+	border-radius:6px;
+	border:1px solid #a511c0;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:"Hind Madurai";
+	font-size:15px;
+	font-weight:bold;
+	padding:6px 24px;
+	text-decoration:none;
+    text-shadow:0px 1px 0px #9b14b3;
+    margin: 3px
+}
+.loginButton:hover {
+	background:linear-gradient(to bottom, #a20dbd 5%, #c123de 100%);
+	background-color:#a20dbd;
+}
+.loginButton:active {
+	position:relative;
+	top:1px;
+}
+
+.loginButton2 {
+    border: none;
+    font-family: "Hind Madurai";
+    border-radius: 3px;
+}
+
+.loginButton2:hover {
+	background:linear-gradient(to bottom, #d0add6 5%, #c123de 100%);
+    background-color:#a20dbd;
+    color: whitesmoke;
+    font-family: "Hind Madurai";
+    border-radius: 3px;
+}
+
+.loginInput {
+    border: none;
+    background-color: whitesmoke;
+    margin-left: 5px;
+    height: 24px;
+    font-family: "Hind Madurai";
+}
+
+.updateButton {
+    border: none;
+    font-family: "Hind Madurai";
+    border-radius: 3px;
+    background-color: rgb(242, 203, 252);
+    margin: 10px;
+}
+
+.updateButton:hover {
+    font-family: "Hind Madurai";
+    background-color:#a20dbd;
+    color: whitesmoke;
+    border-radius: 3px;
+}
+
+.editblock{
+    margin-left: 20px;
+}
+
+.channelTable {
+    width: 85%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    padding-bottom: 30px;
+    height: 60vh;
+    overflow: scroll;
+}
+
+.channelRow {
+    width: 90%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 18px;
+    margin-top: 4px;
+    padding: 4px;
+}
+
+.channelLink {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: whitesmoke;
+}
+
+.channelLink:hover {
+    background-color: rgb(193, 178, 207);
+    color: #2a0845;
+}
+
+.sessionTitle {
+    font-family: "Fascinate", monospace;
+    color: whitesmoke;
+    font-size: 32px;
+}
+
+.channelTitle {
+    font-family: "RocknRoll One", monospace;
+    color: #25053f;
+    font-size: 24px;
+}
+
+.messageBlock {
+    overflow-y: scroll;
+    margin-bottom: 10px;
+    height: 75vh;
+}
+
+.messageRow {
+    margin: 3px 7px 10px 7px;
+    background-color: rgb(228, 216, 240);
+    border-radius: 5px;
+    padding: 5px;
+    text-align:left;
+}
+
+.messageUsername {
+    font-size: 18px;
+    font-weight: 700;
+    margin-left: 3px;
+}
+
+.messageBody {
+    font-size: 16px;
+    margin: 4px 0px 4px 10px;
+}
+
+.replyInThread {
+    padding: 0 4px 0 4px;
+    margin-left: 10px;
+    border-radius: 4px;
+    font-size: 13px;
+    background-color: rgb(210, 171, 219);
+}
+
+.replyInThread:hover {
+    background-color: rgb(83, 28, 97);
+    color: whitesmoke;
+}
+
+.messageButton {
+    border: none;
+    font-family: "Hind Madurai";
+    border-radius: 3px;
+    background-color: rgb(49, 14, 58);
+    color: whitesmoke;
+    margin: 10px;
+}
+
+.messageButton:hover {
+    font-family: "Hind Madurai";
+    background-color:#ac55bb;
+    color: whitesmoke;
+    border-radius: 3px;
+}
+
+.messageBottom {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+
+.numberUnread {
+    border-radius: 50%;
+    width: 14px;
+    height: 14px;
+    padding: 1px;
+    margin-left: 4px;
+    background: rgb(202, 111, 230);
+    color: rgb(255, 255, 255);
+    text-align: center;
+    font-size: 14px;
+}
+
+.closeButton {
+    border: none;
+    font-family: "Hind Madurai";
+    border-radius: 3px;
+    background-color: rgb(49, 14, 58);
+    color: whitesmoke;
+    margin: 10px;
+    position:absolute;
+    top:10px;
+    right:10px;
+    z-index:20;
+}
+
+.closeButton:hover {
+    font-family: "Hind Madurai";
+    background-color:#ac55bb;
+    color: whitesmoke;
+    border-radius: 3px;
+}
+
+
+.threadBlock {
+    overflow-y: scroll;
+    margin-bottom: 10px;
+    height: 55vh;
+}
+
+.replyTo {
+    text-align:left;
+    font-size: 18px;
+    font-weight: 700;
+    margin-left: 7px;
+}
+
+.replyRow {
+    margin: 3px 7px 10px 7px;
+    background-color: rgb(228, 216, 240);
+    border-radius: 5px;
+    padding: 5px;
+    text-align:left;
+}
+
+.replyUsername {
+    font-size: 16px;
+    font-weight: 700;
+    margin-left: 3px;
+}
+
+.replyBody {
+    font-size: 14px;
+    margin: 4px 0px 4px 10px;
+}
+
+.closeMessageButton {
+    font-family: "Hind Madurai";
+    border-radius: 3px;
+    color: whitesmoke;
+    margin: 10px;
+    position:absolute;
+    top:10px;
+    right:10px;
+    border: none;
+    background-color:rgb(49, 14, 58);
+    z-index: 10;
+}
+
+.closeMessageButton:hover {
+    font-family: "Hind Madurai";
+    background-color:#ac55bb;
+    color: whitesmoke;
+    border-radius: 3px;
+}
+
+.msgImg {
+    width: 70%;
+}
