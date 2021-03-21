@@ -36,7 +36,7 @@ Belay is a full-stack development project of a smaller version of the popular wo
 
 
 
-## requirement & Installation
+## requirement
 
 | -  | Version |
 | ------- | ------- |
@@ -48,7 +48,15 @@ Belay is a full-stack development project of a smaller version of the popular wo
 | flask_jwt_extended  | 3.24.1  |
 | sendgrid  | 6.1.2  |
 
-Clone this project, move to the folder, and in terminal run
+
+
+## Installation
+
+- [ ] Clone this project
+- [ ] Move to the directory in terminal
+- [ ] [Set up MySQL](https://dev.mysql.com/doc/mysql-getting-started/en/) 
+- [ ] Run ```.sql``` files in ```database```
+- [ ] In terminal, run
 
 ```
 $ flask run
